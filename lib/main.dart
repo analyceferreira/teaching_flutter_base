@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:teaching_flutter_base/paginas/home.dart';
 
 main() {
   runApp(MyApp());
@@ -8,12 +9,12 @@ main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        decoration: BoxDecoration(color: Colors.black54),
-        child: Text(
-          "Helloww",
-          textDirection: TextDirection.ltr,
-          style: TextStyle(color: Colors.amber, fontSize: 48),
-        ));
+    return MaterialApp(
+      title: 'Meu primeiro teste em Flutter',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: Home(),
+    );
   }
 }
